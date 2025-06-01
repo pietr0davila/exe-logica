@@ -1,4 +1,4 @@
-5# Receber um número
+# Receber um número
 # Verificar se ele é Par ou Ímpar
 # Verificar se é positivo ou negativo
 
@@ -27,17 +27,19 @@ def get_number():
 def is_odd_or_even(number):
     if number.is_integer():
         if number % 2 == 0:
-            print("O número digitado é Par!")
+            print("O número " + number + " é Par!")
         else: 
-            print("O número digitado é Ímpar!")
+            print("O número " + number + " digitado é Ímpar!")
     else:
         print("Não é possível verificar se um número decimal é Par ou ímpar")
         
 def is_positive_or_negative(number):
     if number < 0:
-        print("O número digitado é Negativo!")
+        print("O número " + number + " é Negativo!")
+    elif number == 0:
+        print("O número é 0");
     else: 
-        print("O número digitado é Positivo")
+        print("O número " + number + " é Positivo")
     
 def main():
     get_number()
